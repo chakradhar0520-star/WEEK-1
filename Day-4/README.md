@@ -53,6 +53,9 @@ The correct usage of assignment operators is fundamental to writing synthesizabl
 | *Recommended Use* | **always @(*)** blocks for combinational circuits. | **always @(posedge clk)** blocks for sequential circuits. |
 | *Caveat (Blocking)* | *Order matters\!* Assignments must be ordered correctly, as shown in Lab 6. | *Required* to prevent race conditions in sequential logic. |
 
+<img width="956" height="612" alt="Image" src="https://github.com/user-attachments/assets/82331462-c7d1-4d82-aae3-d1a3536e350e" />
+<img width="628" height="659" alt="Image" src="https://github.com/user-attachments/assets/db934425-7899-40c9-8688-d48010e96193" />
+
 -----
 
 ## 4\. Labs: Pitfalls and Best Practices
@@ -63,6 +66,8 @@ The **bad_mux** code demonstrates two classic mismatch pitfalls:
 
 1.  *Incomplete Sensitivity List:* always @(sel) misses inputs i0 and i1. In simulation, this leads to a mismatch (output doesn't update when i0 or i1 changes). Synthesis tools usually ignore the list and treat it as always @(*).
 2.  *Incorrect Assignment:* Using non-blocking (<=) in a combinational block. The synthesis tool correctly infers a *latch* or *combinational logic*, but the simulation behavior may not accurately reflect the intended combinational behavior.
+
+   <img width="943" height="670" alt="Image" src="https://github.com/user-attachments/assets/44b26a2f-d999-4551-bce9-0a649c0c9aa5" />
 
 ### Lab 6 & 7: Blocking Assignment Caveat
 
@@ -87,6 +92,10 @@ end
 
 
 *Conclusion:* When using blocking assignments for combinational logic, variables must be assigned before they are used by subsequent statements in the same always block.
+
+<img width="951" height="666" alt="Image" src="https://github.com/user-attachments/assets/8d0667eb-3c4c-4a47-8475-a07ae510b598" />
+
+<img width="946" height="664" alt="Image" src="https://github.com/user-attachments/assets/f63f47b1-d94c-42e8-ba3d-e40168d6c49c" />
 
 -----
 
