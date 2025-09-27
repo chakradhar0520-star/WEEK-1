@@ -60,7 +60,7 @@ endmodule
     
 
 -----
-
+<img width="1135" height="758" alt="Image" src="https://github.com/user-attachments/assets/d1fb1fdb-af3b-4f3f-88a1-3942096daed9" />
 ## 🔩 Introduction to Yosys & Logic Synthesis
 
 *Yosys* is the open-source tool we use to convert the behavioral Verilog RTL code into an actual hardware blueprint, known as a *gate-level netlist*.
