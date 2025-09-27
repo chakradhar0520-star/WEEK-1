@@ -10,29 +10,6 @@ Today's focus is on building a strong foundation in digital design by:
 
   * Understanding the roles of a *Simulator, **Design, and **Testbench*.
   * Running a practical simulation using the open-source toolchain.
-  * Introducing the concept of *Synthesis* and *Gate Libraries* with *Yosys*.
-
------
-
-## 🛠 Essential Tools
-
-To follow the labs, you will need the following open-source tools installed on your system (typically Linux/Ubuntu):
-
-  * *Icarus Verilog (iverilog):* An open-source Verilog simulator.
-  * *GTKWave:* A waveform viewer for analyzing simulation results.
-  * *Yosys:* A powerful open-source synthesis suite.
-  * *Git:* For cloning the workshop repository.
-
-### Installation
-
-bash
-# Clone the Workshop Repository
-git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
-cd sky130RTLDesignAndSynthesisWorkshop/verilog_files
-
-# Install Required Tools (for Ubuntu/Debian-based systems)
-sudo apt install iverilog
-sudo apt install gtkwave
 
 
 -----
