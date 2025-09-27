@@ -34,6 +34,8 @@ bash
 gedit sky130_fd_sc_hd__tt_025C_1v80.lib
 
 
+<img width="965" height="777" alt="Image" src="https://github.com/user-attachments/assets/b600826f-0e5f-4b49-a8fc-e11515680522" />
+
 -----
 
 ## 🌳 Hierarchical vs. Flattened Synthesis
@@ -48,6 +50,9 @@ The synthesis approach significantly impacts optimization potential, runtime, an
 | *Debugging* | *Easier* as the gate netlist preserves the RTL module names, allowing direct trace-back. | *Harder* due to the loss of RTL module boundaries. |
 | *Yosys Command* | Uses the hierarchy command implicitly/explicitly. | Uses the flatten command. |
 | *Use Case* | Complex, multi-team projects; easier integration with formal verification and timing analysis tools. | Small-to-medium designs where maximum optimization is the primary goal. |
+
+<img width="871" height="714" alt="Image" src="https://github.com/user-attachments/assets/c7f22ed0-b5a6-4726-a98d-151efc9352d4" />
+<img width="1173" height="791" alt="Image" src="https://github.com/user-attachments/assets/4f2ecadd-2041-4d2b-a8b4-2448ef29ebb7" />
 
 -----
 
@@ -115,6 +120,9 @@ iverilog dff_asyncres.v tb_dff_asyncres.v
 # 3. View Waveform
 gtkwave tb_dff_asyncres.vcd
 
+<img width="1222" height="803" alt="Image" src="https://github.com/user-attachments/assets/dee8f082-b117-4069-81ea-acabce2525ab" />
+
+
 
 ### Yosys Synthesis for Flip-Flops
 
@@ -141,4 +149,5 @@ abc -liberty /address/to/your/sky130/file/sky130_fd_sc_hd__tt_025C_1v80.lib
 # 6. Visualize the Final Gate-Level Netlist
 show
 
-day2
+<img width="878" height="725" alt="Image" src="https://github.com/user-attachments/assets/10b1f660-9f57-499a-99bd-155357ce0814" />
+
