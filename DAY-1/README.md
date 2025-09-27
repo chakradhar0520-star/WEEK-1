@@ -126,5 +126,5 @@ Execute the following commands within the Yosys prompt:
 
     tcl
     show
-    
-day1
+
+     <img width="872" height="721" alt="Image" src="https://github.com/user-attachments/assets/accc706c-847b-4d6d-9822-49e63d9292b8" /> 
