@@ -71,7 +71,10 @@ synth -top <module>
 opt_clean -purge # Aggressive simplification and cleanup
 abc -liberty ...
 
+<img width="872" height="656" alt="Image" src="https://github.com/user-attachments/assets/85ba3ecb-0681-446a-8ff6-fad320742ede" />
 
+
+<img width="904" height="819" alt="Image" src="https://github.com/user-attachments/assets/9632ac64-1631-4fb1-8de4-c0dfd7401d13" />
 -----
 
 ### Sequential Logic (Flip-Flop) Optimization
@@ -82,3 +85,7 @@ These labs illustrate how the synthesis tool handles flip-flops that are configu
 | :--- | :--- | :--- | :--- | :--- |
 | *Lab 5* | else q <= 1'b1; | *Asynchronous Reset* to 0; *Synchronously* loads $\mathbf{1}$. | If the FF always loads '1' (except during reset), it is simplified to a *Set-Reset Latch* or a simple *wire* if the reset is tied off. | Constant Propagation |
 | *Lab 6* | q <= 1'b1; and q <= 1'b1; | *Asynchronously Reset* to 1; *Synchronously* loads $\mathbf{1}$. | The output *q is always 1. The sequential element (FF) is **removed* and replaced by a simple $\mathbf{1}$ (VCC wire). | Constant Propagation (Full removal) |
+
+<img width="888" height="868" alt="Image" src="https://github.com/user-attachments/assets/63630e2a-cb63-4cbb-a659-ac323df44e9d" />
+
+<img width="858" height="943" alt="Image" src="https://github.com/user-attachments/assets/544201f1-5f70-44f0-a3cb-1cc3e7eaa056" />
