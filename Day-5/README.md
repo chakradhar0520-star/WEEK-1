@@ -16,6 +16,10 @@ In combinational logic (always @(*)), the synthesis tool infers a *latch* when a
 | *Lab 3: Nested If-Else* | if (i0) y <= i1; else if (i2) y <= i3; | When $i0=0$ *and* $i2=0$, y is *not assigned. | **Inferred Latch* |
 | *Lab 5: Complete Case* | case(sel) ... default : y = i2; | All sel values (including unlisted ones) are handled by default. | *Pure Combinational Logic* (MUX) |
 
+<img width="945" height="668" alt="Image" src="https://github.com/user-attachments/assets/e155e3ef-28ca-4962-9883-d5c91efbc01b" />
+
+<img width="942" height="665" alt="Image" src="https://github.com/user-attachments/assets/c7158623-9724-40fa-87f0-3dc12d1e1ffb" />
+
 ### Solution: Always Assign a Default Value
 
 To guarantee pure combinational logic (wires and gates) and avoid latches, ensure the variable is assigned:
@@ -33,11 +37,21 @@ always @(*) begin
         y = a;
 end
 
+<img width="941" height="669" alt="Image" src="https://github.com/user-attachments/assets/ea6e33ae-49c1-4c05-9efa-4b439c757636" />
+
+<img width="948" height="666" alt="Image" src="https://github.com/user-attachments/assets/77cc8a1e-b600-45c9-bbcf-fee7577dc871" />
 
 ### Case Statement Pitfalls (Lab 7 & 8)
 
   * *Lab 7 (Incomplete Case):* If the case statement does not cover all possible values of the select signal and lacks a default case, a latch is inferred for the outputs not assigned for the missing values.
+
+<img width="944" height="671" alt="Image" src="https://github.com/user-attachments/assets/d3adc7ab-e736-408a-92f9-690c2f97501c" />
+
+<img width="942" height="663" alt="Image" src="https://github.com/user-attachments/assets/44c7d5c4-5a1b-43d9-b6be-beed734b384b" />
+
   * *Lab 8 (Partial Assignments):* If a variable (x or y) is not assigned in every case item, a latch is inferred for that specific variable. *All variables must be assigned in all branches.*
+
+<img width="891" height="673" alt="Image" src="https://github.com/user-attachments/assets/1e142087-c020-43bb-baf4-b6a1b6591d13" />
 
 -----
 
